@@ -1,0 +1,7 @@
+public long getTime()   获取的是日期对象从1970年1月1日00:00:00到现在的毫秒值
+public void setTime()   设置时间，给的是毫秒值
+
+
+SimpleDateFormat()
+simpleDateFormat.format();  格式化日期
+simpleDateFormat.parse(ss); 日期解析

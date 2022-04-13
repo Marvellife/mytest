@@ -1,0 +1,2 @@
+className=com.fanshe.itheima_07.Student
+methodName=study

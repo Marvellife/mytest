@@ -1,0 +1,17 @@
+File:文件和目录路径名的抽象表示
+	1：文件和目录是通过File封装对象的
+	2.文件对于File而言，其封装的并不是一个真正存在的文件，仅仅是一个路径名而已，他可以是存在的，也可以是不存在的，将来时要通过具体的操作吧这个路径转换为具体存在的。
+
+构造方法
+	File（String pathname），通过给指定的路径名字符串转换为抽象的路径名来创建新的File实例。
+	File（String parent，String child）从父路径名字字符串和子路径字符串来创建新的File实例
+	File（File parent，String child）从父抽象路径和子路径名字符串创建新的File实例
+
+创建功能：
+    public boolean creatNewFile（）   当具有该名称的文件不存在时，创建一个由该抽象路径名命名的新空文件
+    如果文件不存在就创建文件，并返回true
+    如何文件存在，就不创建，返回false
+    pubic boolean mkdir()            创建由此抽象路径名命名的目录
+    如果目录存在，就不创建目录。并返回false
+    如果目录不存在，就创建目录。并返回false
+    public boolean  mkdirs()          创建由此抽象路径名命名的目录,包括任何必需但不存在的父目录
