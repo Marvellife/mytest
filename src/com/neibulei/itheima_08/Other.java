@@ -8,12 +8,18 @@ package com.neibulei.itheima_08;
  */
 public class Other {
     private int num = 10;
-
+    public void show2(){
+        System.out.println("Other.show2");
+    }
     public void method() {
-
+        int num1=12;
+        System.out.println();
         class Inner {
             public void show() {
-                System.out.println(num);
+                //  局部内部类使用了局部变量,这个变量被会定义为final类型,不能修改.
+                // num1=num1+2;
+                System.out.println(num1);
+
             }
         }
         Inner inner=new Inner();

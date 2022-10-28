@@ -5,6 +5,8 @@ package com.paixu;
  *
  * @Author Administrator
  * @Date 2022/3/16 23:48
+ *
+ *
  */
 public class InsertSort {
     public static void insertSort(int[] arr, int n) throws InterruptedException {
